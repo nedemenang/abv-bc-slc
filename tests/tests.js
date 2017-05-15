@@ -3,7 +3,7 @@
 'use strict';
 
 //const assert = require('chai').assert;
-const expect = require('chai').expect
+/*const expect = require('chai').expect
 const myApp = require('../app/library.js');
 
 describe("Arithmetic Functionality", function() {
@@ -33,4 +33,30 @@ describe("Temperature Conversion Functionality", function() {
   it("should return 40 for Fahrenheit value 104", function() {
     assert.equal(myApp.convertTempFtoC(104), 40);
   })
-})
+})*/
+
+describe('Test for negative number ', function () {
+  it('Negative number', function () {
+    expect(getPrime(-8)).toEqual('Negative numbers cannot have prime numbers');
+  });
+});
+
+describe('Test for invalid input string ', function () {
+  it('Invalid input string', function () {
+    expect(getPrime("12")).toEqual('A string is not a valid argument');
+  });
+});
+
+describe('Test for invalid input float ', function () {
+  it('Invalid spec', function () {
+    expect(getPrime(8.33)).toEqual('A float is not a valid argument');
+  });
+});
+
+
+describe('Test for valid input ', function () {
+  it('Invalid spec', function () {
+    expect(getPrime(10)).toEqual(3);
+  });
+});
+
