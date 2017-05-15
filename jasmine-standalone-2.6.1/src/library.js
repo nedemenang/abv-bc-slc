@@ -5,7 +5,7 @@ function getPrime(num)
 	{
 		let primes = [];
 
-		if (typeof num === 'string' || num === NaN || num < 2 || typeof num === 'undefined')
+		if (typeof num === 'string' || num < 2 || typeof num === 'undefined')
 		{
 				
 			return "Invalid input" ;
