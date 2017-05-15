@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jasmine tests/tests.js"
+    "test": "tests/tests.js"
   },
   "repository": {
     "type": "git",
