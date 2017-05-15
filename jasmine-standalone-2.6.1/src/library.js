@@ -3,7 +3,7 @@ function getPrime(num)
 {
 	getPrime = (num)  => 
 	{
-		let primes = [];
+		let primes = []; //O(1)
 
 		if (typeof num === 'string' || num < 2 || typeof num === 'undefined')
 		{
@@ -12,11 +12,11 @@ function getPrime(num)
 		}
 		else
 		{
-		    for (let i = 2; i <= num; i++)
+		    for (let i = 2; i <= num; i++) // O(n)
 		    {
-		        if (isPrime(i))
+		        if (isPrime(i)) // O(Sqrt(n))
 		        {
-		            primes.push(i);
+		            primes.push(i); //O(1)
 		        }
 		    }   
 		}
@@ -28,9 +28,9 @@ function isPrime (n)
 {
 	isPrime = (n) =>
 	{
-	    let squareRoot = Math.floor(Math.sqrt(n));
+	    let squareRoot = Math.floor(Math.sqrt(n)); // O(1)
 
-	    for (let j = 2; j <= squareRoot; j++)
+	    for (let j = 2; j <= squareRoot; j++) //O(sqrt(n))
 	    {
 	        if (n % j == 0)
 	        {
